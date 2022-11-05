@@ -1,2 +1,2 @@
 # whatsapp-py
- bot par envio de mensagens e media
+ bot para envio de mensagens e media
