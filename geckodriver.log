@@ -1,0 +1,51 @@
+1668641870113	geckodriver	INFO	Listening on 127.0.0.1:51362
+1668641873176	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51363" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\USER_A~1\\AppData\\Local\\Temp\\rust_mozprofile7VrcLu"
+1668641873533	Marionette	INFO	Marionette enabled
+1668641873538	Marionette	INFO	Listening on port 51374
+Read port: 51374
+WebDriver BiDi listening on ws://127.0.0.1:51363
+1668641873692	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\USER_A~1\\AppData\\Local\\Temp\\rust_mozprofile7VrcLu\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51363/devtools/browser/36eb34d5-4ea2-4886-aa0d-fd3372a9d991
+JavaScript error: https://web.whatsapp.com/serviceworker.js, line 1: TypeError: Cache.put: Cache got basic response with bad status 206 while trying to add request https://web.whatsapp.com/notification_2a485d84012c106acef03b527bb54635.mp3
+JavaScript error: https://web.whatsapp.com/serviceworker.js, line 1: TypeError: Cache.put: Cache got basic response with bad status 206 while trying to add request https://web.whatsapp.com/sequential-ptt-middle_7fa161964e93db72b8d00ae22189d75f.mp3
+JavaScript error: https://web.whatsapp.com/serviceworker.js, line 1: TypeError: Cache.put: Cache got basic response with bad status 206 while trying to add request https://web.whatsapp.com/sequential-ptt-end_62ed28be622237546fd39f9468a76a49.mp3
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 574: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 574: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1668642007262	Marionette	INFO	Stopped listening on port 51374
+1668642027992	geckodriver	INFO	Listening on 127.0.0.1:51455
+1668642031051	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51456" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\USER_A~1\\AppData\\Local\\Temp\\rust_mozprofileZzWXKY"
+1668642031358	Marionette	INFO	Marionette enabled
+1668642031362	Marionette	INFO	Listening on port 51465
+Read port: 51465
+WebDriver BiDi listening on ws://127.0.0.1:51456
+1668642031500	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\USER_A~1\\AppData\\Local\\Temp\\rust_mozprofileZzWXKY\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51456/devtools/browser/e26aae3d-b6eb-4f7a-b243-d79e3383ea2e
+JavaScript error: https://web.whatsapp.com/serviceworker.js, line 1: TypeError: Cache.put: Cache got basic response with bad status 206 while trying to add request https://web.whatsapp.com/notification_2a485d84012c106acef03b527bb54635.mp3
+JavaScript error: https://web.whatsapp.com/serviceworker.js, line 1: TypeError: Cache.put: Cache got basic response with bad status 206 while trying to add request https://web.whatsapp.com/sequential-ptt-end_62ed28be622237546fd39f9468a76a49.mp3
+JavaScript error: https://web.whatsapp.com/serviceworker.js, line 1: TypeError: Cache.put: Cache got basic response with bad status 206 while trying to add request https://web.whatsapp.com/sequential-ptt-middle_7fa161964e93db72b8d00ae22189d75f.mp3
+1668642631227	geckodriver	INFO	Listening on 127.0.0.1:51700
+1668642635984	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51701" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\USER_A~1\\AppData\\Local\\Temp\\rust_mozprofileIBQgg6"
+1668642636204	Marionette	INFO	Marionette enabled
+1668642636208	Marionette	INFO	Listening on port 51708
+Read port: 51708
+WebDriver BiDi listening on ws://127.0.0.1:51701
+1668642636343	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51701/devtools/browser/6337bc0a-850a-43f9-9665-aa23c591eb1e
+JavaScript error: https://web.whatsapp.com/serviceworker.js, line 1: TypeError: Cache.put: Cache got basic response with bad status 206 while trying to add request https://web.whatsapp.com/notification_2a485d84012c106acef03b527bb54635.mp3
+JavaScript error: https://web.whatsapp.com/serviceworker.js, line 1: TypeError: Cache.put: Cache got basic response with bad status 206 while trying to add request https://web.whatsapp.com/sequential-ptt-middle_7fa161964e93db72b8d00ae22189d75f.mp3
+JavaScript error: https://web.whatsapp.com/serviceworker.js, line 1: TypeError: Cache.put: Cache got basic response with bad status 206 while trying to add request https://web.whatsapp.com/sequential-ptt-end_62ed28be622237546fd39f9468a76a49.mp3
+1668642797916	geckodriver	INFO	Listening on 127.0.0.1:51758
+1668642802670	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51759" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\USER_A~1\\AppData\\Local\\Temp\\rust_mozprofileyr7NC9"
+1668642802904	Marionette	INFO	Marionette enabled
+1668642802908	Marionette	INFO	Listening on port 51766
+Read port: 51766
+WebDriver BiDi listening on ws://127.0.0.1:51759
+1668642803050	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51759/devtools/browser/d3ccbe4b-ecf3-4da6-a00b-4ac6849592da
+JavaScript error: https://web.whatsapp.com/serviceworker.js, line 1: TypeError: Cache.put: Cache got basic response with bad status 206 while trying to add request https://web.whatsapp.com/notification_2a485d84012c106acef03b527bb54635.mp3
+JavaScript error: https://web.whatsapp.com/serviceworker.js, line 1: TypeError: Cache.put: Cache got basic response with bad status 206 while trying to add request https://web.whatsapp.com/sequential-ptt-middle_7fa161964e93db72b8d00ae22189d75f.mp3
+JavaScript error: https://web.whatsapp.com/serviceworker.js, line 1: TypeError: Cache.put: Cache got basic response with bad status 206 while trying to add request https://web.whatsapp.com/sequential-ptt-end_62ed28be622237546fd39f9468a76a49.mp3
+1668642840278	Marionette	INFO	Stopped listening on port 51766
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.

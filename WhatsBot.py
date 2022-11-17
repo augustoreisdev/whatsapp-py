@@ -13,8 +13,8 @@ resposta = input('Deseja iniciar o código? (Y/N)').upper()
 if resposta == 'Y':
     # Abre o Chrome
     chrome_options = Options()
-    chrome_options.add_argument(
-        "user-data-dir=C:/Users/user_Augusto/AppData/Local/Google/Chrome/User Data")
+    # chrome_options.add_argument(
+    #     "user-data-dir=C:/Users/user_Augusto/AppData/Local/Google/Chrome/User Data")
     chrome_options.add_experimental_option(
         'excludeSwitches', ['enable-logging'])
     try:
@@ -24,7 +24,7 @@ if resposta == 'Y':
         driver = webdriver.Chrome( options=chrome_options)
 
     driver.get('https://web.whatsapp.com/')
-    element = WebDriverWait(driver, 90).until(
+    element = WebDriverWait(driver, 200).until(
         EC.presence_of_element_located(
             (By.XPATH, '//div[contains(@class,"copyable-text selectable-text")]'))
     )
@@ -79,7 +79,7 @@ if resposta == 'Y':
     # copyable-text selectable-text
     def enviar_mensagem(mensagem):
         campo_mensagem = driver.find_element(
-            By.XPATH, '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[1]/p')
+            By.CSS_SELECTOR, 'p.selectable-text')
         campo_mensagem.click()
         sleep(1)
         campo_mensagem.send_keys(str(mensagem))
