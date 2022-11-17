@@ -81,7 +81,7 @@ if resposta == 'Y':
         campo_mensagem = driver.find_element(
             By.CSS_SELECTOR, 'p.selectable-text')
         campo_mensagem.click()
-        sleep(1)
+        sleep(0.5)
         campo_mensagem.send_keys(str(mensagem))
         campo_mensagem.send_keys(Keys.ENTER)
 
