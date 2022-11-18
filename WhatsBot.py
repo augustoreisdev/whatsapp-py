@@ -98,6 +98,7 @@ def enviar_midia(midia):
     sleep(2.2)
     attach = driver.find_element(By.CSS_SELECTOR, "input[type='file']")
     attach.send_keys(midia)
+    sleep(0.5)
     espera1 = WebDriverWait(driver, 60).until(
         EC.presence_of_element_located(
             (By.CSS_SELECTOR, "span[data-icon='send']"))
