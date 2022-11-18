@@ -85,7 +85,7 @@ def buscar_contato(contato):
 # copyable-text selectable-text
 def enviar_mensagem(mensagem):
     campo_mensagem = driver.find_element(
-        By.CSS_SELECTOR, 'p.selectable-text')
+        By.XPATH, '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[1]/p')
     campo_mensagem.click()
     sleep(1)
     campo_mensagem.send_keys(str(mensagem)+Keys.ENTER)
@@ -104,6 +104,7 @@ def enviar_midia(midia):
     )
     send = driver.find_element(By.CSS_SELECTOR, "span[data-icon='send']")
     send.click()
+    sleep(2)
 
 # Percorre todos os contatos/Grupos e envia as mensagens
 for contato in contatos:
