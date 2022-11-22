@@ -42,6 +42,7 @@ except:
     driver = webdriver.Chrome( options=chrome_options)
 
 driver.get('https://web.whatsapp.com/')
+sleep(3)
 element = WebDriverWait(driver, 200).until(
     EC.presence_of_element_located(
         (By.XPATH, '//div[contains(@class,"copyable-text selectable-text")]'))
