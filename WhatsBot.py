@@ -31,10 +31,10 @@ else:
 
 # Abre o Chrome
 chrome_options = Options()
-# chrome_options.add_argument(
-#     "user-data-dir=C:/Users/user_Augusto/AppData/Local/Google/Chrome/User Data")
-# chrome_options.add_experimental_option(
-#     'excludeSwitches', ['enable-logging'])
+chrome_options.add_argument(
+    "user-data-dir=C:/Users/user_Augusto/AppData/Local/Google/Chrome/User Data")
+chrome_options.add_experimental_option(
+    'excludeSwitches', ['enable-logging'])
 try:
     driver = webdriver.Chrome(service=Service(
         ChromeDriverManager().install()), options=chrome_options)
@@ -81,7 +81,7 @@ def buscar_contato(contato):
     campo_pesquisa.click()
     campo_pesquisa.send_keys(contato)
     campo_pesquisa.send_keys(Keys.ENTER)
-    sleep(1.5)
+    sleep(2)
 
 # Funcao que envia a mensagem
 # copyable-text selectable-text
@@ -89,7 +89,7 @@ def enviar_mensagem(mensagem):
     campo_mensagem = driver.find_element(
         By.XPATH, '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[1]/p')
     campo_mensagem.click()
-    sleep(0.5)
+    sleep(2)
     campo_mensagem.send_keys(str(mensagem)+Keys.ENTER)
     # campo_mensagem.send_keys(Keys.ENTER)
 
@@ -100,14 +100,14 @@ def enviar_midia(midia):
     sleep(2.2)
     attach = driver.find_element(By.CSS_SELECTOR, "input[type='file']")
     attach.send_keys(midia)
-    sleep(0.5)
+    sleep(1)
     espera1 = WebDriverWait(driver, 60).until(
         EC.presence_of_element_located(
             (By.CSS_SELECTOR, "span[data-icon='send']"))
     )
     send = driver.find_element(By.CSS_SELECTOR, "span[data-icon='send']")
     send.click()
-    sleep(2)
+    sleep(3)
 
 # Percorre todos os contatos/Grupos e envia as mensagens
 for contato in contatos:
@@ -122,6 +122,7 @@ for contato in contatos:
         buscar_contato(contato)
         enviar_mensagem(mensagem)
         enviar_midia('\n'.join(supervisor))
+        sleep(2)
        
     elif contato == contatos[2]:  # supervisor tsu varejo e out
         buscar_contato(contato)
