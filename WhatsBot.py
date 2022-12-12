@@ -13,12 +13,12 @@ resposta = input('type Y for defalut, T for testing').upper()
 
 if resposta == 'Y':
     # Contatos/Grupos - Informar o nome(s) de Grupos ou Contatos que serao enviadas as mensagens
-    contatos = ['LIQ - Gestores',
-                'LIQ - INTELIGÊNCIA',
-                'Gestores TIM e LIQ TSU',
-                'LIQ & TSP Gestão',
-                'Líderes Varejo | LIQ SPi',
-                'LIQ/TIM Reino Varejo TSP']
+    contatos = ['Ability - Gestores',
+                'ABILITY - INTELIGÊNCIA',
+                'Gestão TIM + Ability TSU',
+                'Ability & TSP Gestão',
+                'Varejo | Ability SPi',
+                'Ability/Tim Reino Varejo']
 elif resposta == 'T':
     contatos = ['gp regionais',
                 'gp intelig',
@@ -77,11 +77,10 @@ supervisor = ["D:/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TCN.jpeg",
 def buscar_contato(contato):
     campo_pesquisa = driver.find_element(
         By.XPATH, '//div[contains(@class,"copyable-text selectable-text")]')
-    sleep(1)
     campo_pesquisa.click()
     campo_pesquisa.send_keys(contato)
     campo_pesquisa.send_keys(Keys.ENTER)
-    sleep(2)
+    sleep(1)
 
 # Funcao que envia a mensagem
 # copyable-text selectable-text
@@ -89,7 +88,7 @@ def enviar_mensagem(mensagem):
     campo_mensagem = driver.find_element(
         By.XPATH, '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[1]/p')
     campo_mensagem.click()
-    sleep(2)
+    sleep(1)
     campo_mensagem.send_keys(str(mensagem)+Keys.ENTER)
     # campo_mensagem.send_keys(Keys.ENTER)
 
@@ -100,19 +99,20 @@ def enviar_midia(midia):
     sleep(2.2)
     attach = driver.find_element(By.CSS_SELECTOR, "input[type='file']")
     attach.send_keys(midia)
-    sleep(1)
     espera1 = WebDriverWait(driver, 60).until(
         EC.presence_of_element_located(
             (By.CSS_SELECTOR, "span[data-icon='send']"))
     )
+    sleep(0.5)
     send = driver.find_element(By.CSS_SELECTOR, "span[data-icon='send']")
     send.click()
     sleep(3)
 
-# Percorre todos os contatos/Grupos e envia as mensagens
+# Percorre todos os contatos/Grupos e envia as mensagens    
 for contato in contatos:
     # parcial regional grupo gestores
     if contato == contatos[0]:
+        
         buscar_contato(contato)
         enviar_mensagem(mensagem)
         enviar_midia("\n".join(regional))
