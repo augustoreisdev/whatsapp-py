@@ -57,20 +57,20 @@ mensagem = 'Parcial de vendas:'
 
 # Midia = imagem, pdf, documento, video (caminho do arquivo, lembrando que mesmo
 # no windows o caminho deve ser passado com barra invertida */* )
-regional = ["D:/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT 1.jpg",
-            "D:/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT 2.jpg",
-            "D:/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO 1.jpg",
-            "D:/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO 2.jpg"]
-supervisor = ["D:/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TCN.jpeg",
-                "D:/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TNE.jpeg",
-                "D:/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TSE.jpeg",
-                "D:/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TSP.jpeg",
-                "D:/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TSU.jpeg",
-                "D:/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TCN.jpeg",
-                "D:/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TNE.jpeg",
-                "D:/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TSE.jpeg",
-                "D:/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TSP.jpeg",
-                "D:/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TSU.jpeg"]
+regional = ["G:/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT 1.jpg",
+            "G:/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT 2.jpg",
+            "G:/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO 1.jpg",
+            "G:/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO 2.jpg"]
+supervisor = ["G:/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TCN.jpeg",
+                "G:/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TNE.jpeg",
+                "G:/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TSE.jpeg",
+                "G:/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TSP.jpeg",
+                "G:/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TSU.jpeg",
+                "G:/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TCN.jpeg",
+                "G:/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TNE.jpeg",
+                "G:/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TSE.jpeg",
+                "G:/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TSP.jpeg",
+                "G:/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TSU.jpeg"]
 
 # Funcao que pesquisa o Contato/Grupo
 
