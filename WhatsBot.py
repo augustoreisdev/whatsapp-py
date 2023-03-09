@@ -16,9 +16,9 @@ if resposta == 'Y':
     contatos = ['Ability - Gestores',
                 'ABILITY - INTELIGÊNCIA',
                 'Gestão TIM + Ability TSU',
-                'Ability & TSP Gestão',
-                'Varejo | Ability SPi',
-                'Ability/Tim Reino Varejo']
+                'Líderes Varejo | Ability TSP',
+                'Ability/Tim Reino Varejo',
+                'OUT Ability/Tim TSP']
 elif resposta == 'T':
     contatos = ['gp regionais',
                 'gp intelig',
@@ -61,7 +61,7 @@ regional = ["G:/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT 1.jpg",
             "G:/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT 2.jpg",
             "G:/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO 1.jpg",
             "G:/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO 2.jpg"]
-supervisor = ["G:/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TCN.jpeg",
+supervisor = [  "G:/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TCN.jpeg",
                 "G:/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TNE.jpeg",
                 "G:/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TSE.jpeg",
                 "G:/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TSP.jpeg",
@@ -128,17 +128,17 @@ for contato in contatos:
         buscar_contato(contato)
         enviar_mensagem(mensagem)
         enviar_midia(supervisor[4] + '\n' + supervisor[9])
-        
-    elif contato == contatos[3]:  # supervisor tsp varejo e out
-        buscar_contato(contato)
-        enviar_mensagem(mensagem)
-        enviar_midia(supervisor[3] + '\n' + supervisor[8])
-        
+
+
     # supervisor tsp varejo
-    elif contato == contatos[4] or contato == contatos[5]:
+    elif contato == contatos[3] or contato == contatos[4]:
         buscar_contato(contato)
         enviar_mensagem(mensagem)
         enviar_midia(supervisor[8])
+    elif contato == contatos[5]:  # supervisor tsp  out
+        buscar_contato(contato)
+        enviar_mensagem(mensagem)
+        enviar_midia(supervisor[3])
         
 sleep(10)
 driver.quit()
