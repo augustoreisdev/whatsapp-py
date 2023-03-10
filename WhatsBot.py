@@ -18,7 +18,7 @@ if resposta == 'Y':
                 'Gestão TIM + Ability TSU',
                 'Líderes Varejo | Ability TSP',
                 'Ability/Tim Reino Varejo',
-                'OUT Ability/Tim TSP']
+                'OUT Ability | TSP']
 elif resposta == 'T':
     contatos = ['gp regionais',
                 'gp intelig',
