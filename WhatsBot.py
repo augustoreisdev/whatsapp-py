@@ -43,9 +43,9 @@ except:
 
 driver.get('https://web.whatsapp.com/')
 
-element = WebDriverWait(driver, 200).until(
+element = WebDriverWait(driver, 30).until(
     EC.presence_of_element_located(
-        (By.XPATH, '//div[contains(@class,"copyable-text selectable-text")]'))
+        (By.ID, 'side'))
 )
 sleep(3)
 
@@ -76,7 +76,7 @@ supervisor = [  "G:/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TCN.jpeg
 
 def buscar_contato(contato):
     campo_pesquisa = driver.find_element(
-        By.XPATH, '//div[contains(@class,"copyable-text selectable-text")]')
+        By.CSS_SELECTOR, "div[data-testid='chat-list-search']")
     campo_pesquisa.click()
     campo_pesquisa.send_keys(contato)
     campo_pesquisa.send_keys(Keys.ENTER)
