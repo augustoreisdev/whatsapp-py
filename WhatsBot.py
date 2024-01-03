@@ -12,12 +12,12 @@ from time import sleep
 resposta = input('type Y for defalut, T for testing').upper()
 
 if resposta == 'Y':
-    # Contatos/Grupos - Informar o nome(s) de Grupos ou Contatos que serao enviadas as mensagens
+    # Contatos/Grupos - Informar o nome(s) de Grupos ou Contatos que serao enviadyas as mensagens
     contatos = ['Ability - Gestores',
                 'ABILITY - INTELIGÊNCIA',
                 'Gestão TIM + Ability TSU',
-                'Líderes Varejo | Ability TSP',
-                'Ability/Tim Reino Varejo',
+                'Líderes Multi | Ability TSP',
+                'Ability/Tim Reino Multi',
                 'OUT Ability | TSP']
 elif resposta == 'T':
     contatos = ['gp regionais',
@@ -32,18 +32,19 @@ else:
 # Abre o Chrome
 chrome_options = Options()
 chrome_options.add_argument(
-    "user-data-dir=C:/Users/user_Augusto/AppData/Local/Google/Chrome/User Data")
+    "user-data-dir=C:/Users/AUGUSTO/AppData/Local/Google/Chrome/User Data")
 chrome_options.add_experimental_option(
     'excludeSwitches', ['enable-logging'])
 try:
     driver = webdriver.Chrome(service=Service(
         ChromeDriverManager().install()), options=chrome_options)
 except:    
-    driver = webdriver.Chrome( options=chrome_options)
+    print("usando arquivo local")
+    driver = webdriver.Chrome( options=chrome_options, executable_path='chromedriver')
 
 driver.get('https://web.whatsapp.com/')
 
-element = WebDriverWait(driver, 30).until(
+element = WebDriverWait(driver, 90).until(
     EC.presence_of_element_located(
         (By.ID, 'side'))
 )
@@ -76,7 +77,7 @@ supervisor = [  "G:/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TCN.jpeg
 
 def buscar_contato(contato):
     campo_pesquisa = driver.find_element(
-        By.CSS_SELECTOR, "div[data-testid='chat-list-search']")
+        By.XPATH, '//*[@id="side"]/div[1]/div/div/div[2]/div/div[1]/p')
     campo_pesquisa.click()
     campo_pesquisa.send_keys(contato)
     campo_pesquisa.send_keys(Keys.ENTER)
@@ -95,9 +96,9 @@ def enviar_mensagem(mensagem):
 # Funcao que envia midia como mensagem
 
 def enviar_midia(midia):
-    driver.find_element(By.CSS_SELECTOR, "span[data-icon='clip']").click()
+    driver.find_element(By.CSS_SELECTOR, "span[data-icon='attach-menu-plus']").click()
     sleep(2.2)
-    attach = driver.find_element(By.CSS_SELECTOR, "input[type='file']")
+    attach = driver.find_element(By.CSS_SELECTOR, "input[accept='image/*,video/mp4,video/3gpp,video/quicktime']")
     attach.send_keys(midia)
     espera1 = WebDriverWait(driver, 60).until(
         EC.presence_of_element_located(
