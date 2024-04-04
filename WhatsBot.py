@@ -129,7 +129,8 @@ for contato in contatos:
     elif contato == contatos[2]:  # supervisor tsu varejo e out
         buscar_contato(contato)
         enviar_mensagem(mensagem)
-        enviar_midia(supervisor[4] + '\n' + supervisor[9])
+        #enviar_midia(supervisor[4] + '\n' + supervisor[9])
+        enviar_midia(supervisor[9])
 
 
     # supervisor tsp varejo
