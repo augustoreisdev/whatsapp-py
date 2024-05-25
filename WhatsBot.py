@@ -13,12 +13,11 @@ resposta = input('type Y for defalut, T for testing').upper()
 
 if resposta == 'Y':
     # Contatos/Grupos - Informar o nome(s) de Grupos ou Contatos que serao enviadyas as mensagens
-    contatos = ['Ability - Gestores',
-                'ABILITY - INTELIGÊNCIA',
-                'Gestão TIM + Ability TSU',
-                'Líderes Multi | Ability TSP',
-                'Ability/Tim Reino Multi',
-                'OUT Ability | TSP']
+    contatos = ['Ability - Gestores',#0
+                'ABILITY - INTELIGÊNCIA',#1
+                'Líderes Multi | Ability TSP',#2
+                'Ability/Tim Reino Multi',#3
+                'OUT Ability | TSP']#4
 elif resposta == 'T':
     contatos = ['gp regionais',
                 'gp intelig',
@@ -63,16 +62,16 @@ regional = ["C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OU
             "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT 2.jpg",
             "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO 1.jpg",
             "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO 2.jpg"]
-supervisor = [  "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TCN.jpeg",
-                "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TNE.jpeg",
-                "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TSE.jpeg",
-                "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TSP.jpeg",
-                "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TSU.jpeg",
-                "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TCN.jpeg",
-                "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TNE.jpeg",
-                "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TSE.jpeg",
-                "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TSP.jpeg",
-                "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TSU.jpeg"]
+supervisor = [  "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TCN.jpeg",#0
+                "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TNE.jpeg",#1
+                "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TSE.jpeg",#2
+                "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TSP.jpeg",#3
+                "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TSU.jpeg",#4
+                "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TCN.jpeg",#5
+                "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TNE.jpeg",#6
+                "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TSE.jpeg",#7
+                "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TSP.jpeg",#8
+                "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TSU.jpeg"]#9
 
 # Funcao que pesquisa o Contato/Grupo
 
@@ -124,21 +123,17 @@ for contato in contatos:
         buscar_contato(contato)
         enviar_mensagem(mensagem)
         enviar_midia('\n'.join(supervisor))
+        enviar_midia("\n".join(regional))
         sleep(2)
-       
-    elif contato == contatos[2]:  # supervisor tsu varejo e out
-        buscar_contato(contato)
-        enviar_mensagem(mensagem)
-        #enviar_midia(supervisor[4] + '\n' + supervisor[9])
-        enviar_midia(supervisor[9])
+
 
 
     # supervisor tsp varejo
-    elif contato == contatos[3] or contato == contatos[4]:
+    elif contato == contatos[2] or contato == contatos[3]:
         buscar_contato(contato)
         enviar_mensagem(mensagem)
         enviar_midia(supervisor[8])
-    elif contato == contatos[5]:  # supervisor tsp  out
+    elif contato == contatos[4]:  # supervisor tsp  out
         buscar_contato(contato)
         enviar_mensagem(mensagem)
         enviar_midia(supervisor[3])
