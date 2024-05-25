@@ -31,7 +31,7 @@ else:
 # Abre o Chrome
 chrome_options = Options()
 chrome_options.add_argument(
-    "user-data-dir=C:/Users/AUGUSTO/AppData/Local/Google/Chrome/User Data")
+    "user-data-dir=C:/Users/AUGUS/AppData/Local/Google/Chrome/User Data")
 chrome_options.add_experimental_option(
     'excludeSwitches', ['enable-logging'])
 try:
@@ -58,20 +58,20 @@ mensagem = 'Parcial de vendas:'
 # Midia = imagem, pdf, documento, video (caminho do arquivo, lembrando que mesmo
 # no windows o caminho deve ser passado com barra invertida */* )
 
-regional = ["C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT 1.jpg",
-            "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT 2.jpg",
-            "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO 1.jpg",
-            "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO 2.jpg"]
-supervisor = [  "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TCN.jpeg",#0
-                "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TNE.jpeg",#1
-                "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TSE.jpeg",#2
-                "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TSP.jpeg",#3
-                "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TSU.jpeg",#4
-                "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TCN.jpeg",#5
-                "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TNE.jpeg",#6
-                "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TSE.jpeg",#7
-                "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TSP.jpeg",#8
-                "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TSU.jpeg"]#9
+regional = ["C:/Users/AUGUS/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT 1.jpg",
+            "C:/Users/AUGUS/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT 2.jpg",
+            "C:/Users/AUGUS/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO 1.jpg",
+            "C:/Users/AUGUS/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO 2.jpg"]
+supervisor = [  "C:/Users/AUGUS/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TCN.jpeg",#0
+                "C:/Users/AUGUS/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TNE.jpeg",#1
+                "C:/Users/AUGUS/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TSE.jpeg",#2
+                "C:/Users/AUGUS/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TSP.jpeg",#3
+                "C:/Users/AUGUS/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TSU.jpeg",#4
+                "C:/Users/AUGUS/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TCN.jpeg",#5
+                "C:/Users/AUGUS/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TNE.jpeg",#6
+                "C:/Users/AUGUS/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TSE.jpeg",#7
+                "C:/Users/AUGUS/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TSP.jpeg",#8
+                "C:/Users/AUGUS/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TSU.jpeg"]#9
 
 # Funcao que pesquisa o Contato/Grupo
 
