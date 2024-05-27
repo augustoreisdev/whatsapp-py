@@ -31,7 +31,7 @@ else:
 # Abre o Chrome
 chrome_options = Options()
 chrome_options.add_argument(
-    "user-data-dir=C:/Users/AUGUS/AppData/Local/Google/Chrome/User Data")
+    "user-data-dir=C:/Users/AUGUSTO/AppData/Local/Google/Chrome/User Data")
 chrome_options.add_experimental_option(
     'excludeSwitches', ['enable-logging'])
 try:
@@ -58,20 +58,21 @@ mensagem = 'Parcial de vendas:'
 # Midia = imagem, pdf, documento, video (caminho do arquivo, lembrando que mesmo
 # no windows o caminho deve ser passado com barra invertida */* )
 
-regional = ["C:/Users/AUGUS/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT 1.jpg",
-            "C:/Users/AUGUS/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT 2.jpg",
-            "C:/Users/AUGUS/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO 1.jpg",
-            "C:/Users/AUGUS/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO 2.jpg"]
-supervisor = [  "C:/Users/AUGUS/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TCN.jpeg",#0
-                "C:/Users/AUGUS/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TNE.jpeg",#1
-                "C:/Users/AUGUS/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TSE.jpeg",#2
-                "C:/Users/AUGUS/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TSP.jpeg",#3
-                "C:/Users/AUGUS/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/OUT TSU.jpeg",#4
-                "C:/Users/AUGUS/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TCN.jpeg",#5
-                "C:/Users/AUGUS/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TNE.jpeg",#6
-                "C:/Users/AUGUS/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TSE.jpeg",#7
-                "C:/Users/AUGUS/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TSP.jpeg",#8
-                "C:/Users/AUGUS/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/VAREJO TSU.jpeg"]#9
+pasta_imagens = "C:/Users/AUGUSTO/Meu drive/LIQ/PARCIAL DE VENDAS/IMAGENS PARCIAL/"
+regional = [pasta_imagens +"OUT 1.jpg",
+            pasta_imagens +"OUT 2.jpg",
+            pasta_imagens +"VAREJO 1.jpg",
+            pasta_imagens +"VAREJO 2.jpg"]
+supervisor = [  pasta_imagens+"OUT TCN.jpeg",#0
+                pasta_imagens+"OUT TNE.jpeg",#1
+                pasta_imagens+"OUT TSE.jpeg",#2
+                pasta_imagens+"OUT TSP.jpeg",#3
+                pasta_imagens+"OUT TSU.jpeg",#4
+                pasta_imagens+"VAREJO TCN.jpeg",#5
+                pasta_imagens+"VAREJO TNE.jpeg",#6
+                pasta_imagens+"VAREJO TSE.jpeg",#7
+                pasta_imagens+"VAREJO TSP.jpeg",#8
+                pasta_imagens+"VAREJO TSU.jpeg"]#9
 
 # Funcao que pesquisa o Contato/Grupo
 
@@ -140,3 +141,19 @@ for contato in contatos:
         
 sleep(10)
 driver.quit()
+Grupos_imagens = {
+    "OUT TNE.jpeg",#1
+    "OUT TCN.jpeg",#0
+    "OUT TSE.jpeg",#2
+    "OUT TSP.jpeg",#3
+    "OUT TSU.jpeg",#4
+    "VAREJO TCN.jpeg",#5
+    "VAREJO TNE.jpeg",#6
+    "VAREJO TSE.jpeg",#7
+    "VAREJO TSP.jpeg",#8
+    "VAREJO TSU.jpeg"
+    "OUT 1.jpg",
+    "OUT 2.jpg",
+    "VAREJO 1.jpg",
+    "VAREJO 2.jpg"
+}
